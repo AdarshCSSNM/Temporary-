@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  perspective: 1000px;
+}
+
+.text {
+  font-family: 'Arial', sans-serif;
+  font-size: 3em;
+  color: #333;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+  animation: rotateText 5s infinite linear;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
